@@ -284,7 +284,7 @@ export default function Index() {
           Standard deviation: {StandardDeviation[0]}
         </div>
       </div>
-      <footer style={{ textAlign: "center", marginTop: "10px" }}>
+      <footer style={{ textAlign: "center", margin: "10px 0" }}>
         <p>
           Made by{" "}
           <a
@@ -292,7 +292,15 @@ export default function Index() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Segun
+            Segun.
+          </a>
+          {" "} Devs get the code{" "}
+          <a
+            href="https://github.com/Segun98/averages-calculator"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
           </a>
         </p>
       </footer>

@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
 li {
   list-style: none;
 }
 
-button{
-  cursor:pointer
+button {
+  cursor: pointer
 }
 
 .index-page {
@@ -69,8 +75,8 @@ label {
   font-size: 10px;
 }
 
-ul li{
-  border: 1px solid black;
+ul li {
+  border: 1px solid lightgrey;
 }
 
 @media only screen and (min-width: 600px) {

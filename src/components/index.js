@@ -41,7 +41,6 @@ export default function Index() {
   const [fx_meansum] = useState([]);
   const [fvarx_meansum] = useState([]);
 
-
   function submitX(e) {
     e.preventDefault();
     if (f_input === "") return null;
@@ -131,8 +130,8 @@ export default function Index() {
     Variance.push(Varian.toFixed(2));
 
     // StandardDeviation
-    StandardDeviation.push(Math.sqrt(Variance[0]).toFixed(2))
-  }  
+    StandardDeviation.push(Math.sqrt(Variance[0]).toFixed(2));
+  }
 
   return (
     <div className="index-page">
@@ -227,6 +226,7 @@ export default function Index() {
               <label htmlFor="Number(x)">Number(x)</label>
               <br />
               <input
+                readOnly={showsum}
                 required
                 type="text"
                 inputMode="numeric"
@@ -244,6 +244,7 @@ export default function Index() {
               <label htmlFor="Frequency(x)">Frequency(F)</label>
               <br />
               <input
+                readOnly={showsum}
                 required={required}
                 type="text"
                 inputMode="numeric"
@@ -272,7 +273,7 @@ export default function Index() {
       </div>
       <br />
       <div className="answer">
-      <h3>Results</h3>
+        <h3>Results</h3>
         <div>Mean: {meanAns}</div>
         <br />
         <div>Mean Deviation: {meanDeviation[0]}</div>

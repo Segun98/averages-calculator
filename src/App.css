@@ -1,38 +1,99 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+button{
+  cursor:pointer
+}
+
+.index-page {
+  margin: auto;
+  width: 95%;
+  margin-top: 40px;
+}
+
+.table-grid {
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table-grid div {
+  font-size: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-items {
+  margin-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-form input {
+  border: none;
+  border-bottom: 1px solid lightblue;
+  width: 80px;
+}
+
+input:active {
+  border: none;
+}
+
+input:focus {
+  border: none;
+}
+
+input:hover {
+  border: none;
+}
+
+.number-input {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.number-input div {
+  margin-left: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+label {
+  font-size: 12px;
+}
+
+.table-grid .long-tablename {
+  font-size: 10px;
+}
+
+ul li{
+  border: 1px solid black;
+}
+
+@media only screen and (min-width: 600px) {
+  .index-page {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .table-grid .long-tablename {
+    font-size: 18px;
   }
+
+  label {
+    font-size: 17px;
+  }
+
+  .table-grid div {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .index-page {
+    width: 60%;
+  }
+
 }

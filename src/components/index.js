@@ -260,7 +260,7 @@ export default function Index() {
           </div>
         </form>
         <br />
-        <button onClick={findMean}>Calculate</button>
+        <button onClick={findMean} disabled={showsum}>Calculate</button>
         <br />
         <br />
         <button
@@ -272,16 +272,16 @@ export default function Index() {
         </button>
       </div>
       <br />
+        <h4>Results</h4>
       <div className="answer">
-        <h3>Results</h3>
-        <div>Mean: {meanAns}</div>
+        <div>Mean: <span>{meanAns}</span></div>
         <br />
-        <div>Mean Deviation: {meanDeviation[0]}</div>
+        <div>Mean Deviation: <span>{meanDeviation[0]}</span> </div>
         <br />
-        <div>Variance: {Variance[0]}</div>
+        <div>Variance: <span>{Variance[0]}</span> </div>
         <br />
-        <div style={{ display: "flex" }}>
-          Standard deviation: {StandardDeviation[0]}
+        <div>
+          Standard deviation: <span>{StandardDeviation[0]}</span> 
         </div>
       </div>
       <footer style={{ textAlign: "center", margin: "10px 0" }}>

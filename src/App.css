@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Bai Jamjuree", sans-serif;
 }
@@ -15,7 +19,17 @@ li {
 }
 
 button {
-  cursor: pointer
+  cursor: pointer;
+  background: #333;
+  border: 1px solid #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+button:focus {
+  border-radius: 10px;
+  outline: 10px;
 }
 
 .index-page {
@@ -77,6 +91,16 @@ label {
 
 ul li {
   border: 1px solid lightgrey;
+}
+
+.answer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.answer span {
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 600px) {
